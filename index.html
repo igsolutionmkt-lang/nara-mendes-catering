@@ -20,7 +20,8 @@
 <meta property="og:site_name" content="Nara Mendes Catering Luso-Brasileiro" />
 
 <!-- ===== Favicon ===== -->
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23C9622D'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%23F8F4ED' font-family='serif'>N</text></svg>" />
+<link rel="icon" type="image/png" href="assets/logo-icon.png" />
+<link rel="apple-touch-icon" href="assets/logo-icon.png" />
 
 <!-- ===== Fonts ===== -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -57,8 +58,9 @@
   --creme:      #F8F4ED;
   --terracota:  #C9622D;
   --terracota-dark: #A84E20;
-  --verde:      #2D4A3E;
-  --verde-dark: #213830;
+  /* nota: tokens historicamente "verde"; agora preto/carvão do logótipo */
+  --verde:      #221C17;  /* carvão (escuro principal) */
+  --verde-dark: #14100C;  /* quase-preto (rodapé) */
   --dourado:    #C9A24B;
   --branco:     #FFFFFF;
   --texto:      #2A2622;
@@ -173,9 +175,8 @@ header.nav {
 .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 22px; max-width: var(--maxw); margin: 0 auto; }
 .brand { display: flex; align-items: center; gap: 11px; }
 .brand-mark {
-  width: 42px; height: 42px; border-radius: 50%; background: var(--terracota);
-  display: grid; place-items: center; color: var(--creme); font-family: var(--serif);
-  font-weight: 700; font-size: 1.35rem; flex-shrink: 0;
+  width: 46px; height: 46px; border-radius: 50%; object-fit: cover; flex-shrink: 0;
+  background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 .brand-name { font-family: var(--serif); font-weight: 600; font-size: 1.12rem; color: var(--verde); line-height: 1.1; }
 .brand-name small { display: block; font-family: var(--sans); font-weight: 500; font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--terracota); }
@@ -252,11 +253,11 @@ header.nav {
 }
 .ph-1 { background-image: linear-gradient(135deg, #d9763f, #a83e1c); }
 .ph-2 { background-image: linear-gradient(135deg, #e0b15a, #b9863a); }
-.ph-3 { background-image: linear-gradient(135deg, #3a5d4d, #223a30); }
+.ph-3 { background-image: linear-gradient(135deg, #4a3b30, #2a2018); }
 .ph-4 { background-image: linear-gradient(135deg, #d98f6b, #b35c38); }
 .ph-5 { background-image: linear-gradient(135deg, #c98b5e, #8a5230); }
 .ph-6 { background-image: linear-gradient(135deg, #cba36a, #9c7438); }
-.ph-7 { background-image: linear-gradient(135deg, #4a6b59, #2d4a3e); }
+.ph-7 { background-image: linear-gradient(135deg, #6b5847, #3a2c20); }
 .ph-8 { background-image: linear-gradient(135deg, #d7724a, #b14a26); }
 
 /* ============================================================
@@ -582,7 +583,7 @@ footer a:hover { color: var(--dourado); }
 <header class="nav">
   <div class="nav-inner">
     <a href="#hero" class="brand" aria-label="Nara Mendes Catering">
-      <span class="brand-mark">N</span>
+      <img class="brand-mark" src="assets/logo-icon.png" alt="Logótipo Nara Mendes Catering" />
       <span class="brand-name">Nara Mendes<small>Catering Luso-Brasileiro</small></span>
     </a>
     <nav class="nav-links" id="navLinks">
@@ -1134,7 +1135,7 @@ footer a:hover { color: var(--dourado); }
     <div class="foot-grid">
       <div>
         <div class="foot-brand">
-          <span class="brand-mark">N</span>
+          <img class="brand-mark" src="assets/logo-icon.png" alt="Logótipo Nara Mendes Catering" />
           <span class="brand-name">Nara Mendes<small>Catering Luso-Brasileiro</small></span>
         </div>
         <p style="max-width:330px;font-size:0.95rem;">Sabores do Brasil e de Portugal para festas, aniversários e eventos no Grande Porto. Catering com mais de uma década de dedicação.</p>
