@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- ===== SEO ===== -->
+<title>Nara Mendes Catering Luso-Brasileiro | Festas e Eventos no Porto</title>
+<meta name="description" content="Catering para festas, aniversários e eventos no Porto e Matosinhos. Salgados, bolos decorados, doces, almoços e jantares com sabores brasileiros e portugueses." />
+<meta name="keywords" content="catering Porto, catering brasileiro Porto, catering Matosinhos, salgados brasileiros Porto, bolos decorados Porto, catering para aniversários Porto, catering luso-brasileiro, catering para festas Grande Porto" />
+<meta name="author" content="Nara Mendes Catering Luso-Brasileiro" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://naramendescatering.pt/" />
+
+<!-- ===== Open Graph ===== -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="pt_PT" />
+<meta property="og:title" content="Nara Mendes Catering Luso-Brasileiro | Festas e Eventos no Porto" />
+<meta property="og:description" content="Catering para festas, aniversários e eventos no Porto e Matosinhos. Salgados, bolos decorados, doces, almoços e jantares com sabores brasileiros e portugueses." />
+<meta property="og:site_name" content="Nara Mendes Catering Luso-Brasileiro" />
+
+<!-- ===== Favicon ===== -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23C9622D'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%23F8F4ED' font-family='serif'>N</text></svg>" />
+
+<!-- ===== Fonts ===== -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- ===== Structured Data (Local SEO) ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FoodEstablishment",
+  "name": "Nara Mendes Catering Luso-Brasileiro",
+  "image": "",
+  "description": "Catering luso-brasileiro para festas, aniversários e eventos no Grande Porto. Salgados, bolos decorados, doces, almoços e jantares personalizados.",
+  "servesCuisine": ["Brasileira", "Portuguesa"],
+  "telephone": "+351967323308",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Dom Nuno Álvares Pereira, 240",
+    "addressLocality": "Matosinhos",
+    "addressRegion": "Porto",
+    "addressCountry": "PT"
+  },
+  "areaServed": ["Matosinhos", "Porto", "Vila Nova de Gaia", "Maia", "Gondomar", "Grande Porto"],
+  "sameAs": ["https://www.instagram.com/naruscades"]
+}
+</script>
+
+<style>
+/* ============================================================
+   DESIGN TOKENS
+   ============================================================ */
+:root {
+  --creme:      #F8F4ED;
+  --terracota:  #C9622D;
+  --terracota-dark: #A84E20;
+  --verde:      #2D4A3E;
+  --verde-dark: #213830;
+  --dourado:    #C9A24B;
+  --branco:     #FFFFFF;
+  --texto:      #2A2622;
+  --texto-suave:#5E574E;
+
+  --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --sans:  'Inter', system-ui, -apple-system, sans-serif;
+
+  --radius-sm: 12px;
+  --radius:    20px;
+  --radius-lg: 32px;
+
+  --shadow-sm: 0 4px 14px rgba(45, 74, 62, 0.07);
+  --shadow:    0 14px 40px rgba(45, 74, 62, 0.12);
+  --shadow-lg: 0 24px 60px rgba(45, 74, 62, 0.18);
+
+  --maxw: 1180px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: var(--sans);
+  color: var(--texto);
+  background: var(--creme);
+  line-height: 1.65;
+  font-size: 17px;
+  overflow-x: hidden;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+h1, h2, h3, h4 { font-family: var(--serif); font-weight: 600; line-height: 1.12; color: var(--verde); letter-spacing: -0.01em; }
+h1 { font-size: clamp(2.1rem, 6vw, 4rem); font-weight: 600; }
+h2 { font-size: clamp(1.8rem, 4.5vw, 2.9rem); }
+h3 { font-size: clamp(1.25rem, 2.5vw, 1.55rem); }
+
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 22px; }
+section { padding: clamp(56px, 9vw, 110px) 0; }
+
+.eyebrow {
+  font-family: var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--terracota);
+  margin-bottom: 14px;
+  display: inline-block;
+}
+.section-head { max-width: 760px; margin: 0 auto clamp(36px, 5vw, 60px); text-align: center; }
+.section-head p { color: var(--texto-suave); margin-top: 16px; font-size: 1.08rem; }
+
+/* ============================================================
+   BUTTONS  (WhatsApp = primary / dominant)
+   ============================================================ */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  font-family: var(--sans); font-weight: 600; font-size: 1.02rem;
+  padding: 17px 30px; border-radius: 100px; border: 0; cursor: pointer;
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+  text-align: center; line-height: 1.2;
+}
+.btn svg { width: 21px; height: 21px; flex-shrink: 0; }
+
+/* WhatsApp — primary, dominant */
+.btn-wa {
+  background: var(--terracota);
+  color: #fff;
+  box-shadow: 0 10px 26px rgba(201, 98, 45, 0.38);
+}
+.btn-wa:hover { background: var(--terracota-dark); transform: translateY(-3px); box-shadow: 0 16px 34px rgba(201, 98, 45, 0.46); }
+
+/* Secondary — clearly subordinate (outline / ghost) */
+.btn-ghost {
+  background: transparent;
+  color: var(--verde);
+  border: 1.5px solid rgba(45, 74, 62, 0.28);
+  font-weight: 600;
+}
+.btn-ghost:hover { border-color: var(--verde); background: rgba(45, 74, 62, 0.05); transform: translateY(-2px); }
+
+.btn-ghost-light {
+  background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.45);
+}
+.btn-ghost-light:hover { background: rgba(255,255,255,0.12); border-color: #fff; }
+
+.btn-sm { padding: 13px 24px; font-size: 0.94rem; }
+
+/* ============================================================
+   "+10 ANOS" ARTISAN STAMP / SEAL
+   ============================================================ */
+.stamp {
+  position: relative; width: 124px; height: 124px; flex-shrink: 0;
+  display: grid; place-items: center;
+  color: var(--terracota);
+  filter: drop-shadow(0 6px 14px rgba(45,74,62,0.18));
+}
+.stamp svg { width: 100%; height: 100%; }
+.stamp.small { width: 84px; height: 84px; }
+
+/* ============================================================
+   HEADER / NAV
+   ============================================================ */
+header.nav {
+  position: sticky; top: 0; z-index: 90;
+  background: rgba(248, 244, 237, 0.86);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(45,74,62,0.08);
+}
+.nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 22px; max-width: var(--maxw); margin: 0 auto; }
+.brand { display: flex; align-items: center; gap: 11px; }
+.brand-mark {
+  width: 42px; height: 42px; border-radius: 50%; background: var(--terracota);
+  display: grid; place-items: center; color: var(--creme); font-family: var(--serif);
+  font-weight: 700; font-size: 1.35rem; flex-shrink: 0;
+}
+.brand-name { font-family: var(--serif); font-weight: 600; font-size: 1.12rem; color: var(--verde); line-height: 1.1; }
+.brand-name small { display: block; font-family: var(--sans); font-weight: 500; font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--terracota); }
+.nav-links { display: flex; align-items: center; gap: 30px; }
+.nav-links a { font-weight: 500; font-size: 0.96rem; color: var(--texto-suave); transition: color .15s; }
+.nav-links a:hover { color: var(--terracota); }
+.nav-cta { display: flex; align-items: center; gap: 16px; }
+.burger { display: none; background: none; border: 0; cursor: pointer; padding: 6px; }
+.burger span { display: block; width: 26px; height: 2.5px; background: var(--verde); margin: 5px 0; border-radius: 3px; transition: .25s; }
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+  position: relative; overflow: hidden;
+  background:
+    radial-gradient(900px 500px at 85% -10%, rgba(201,162,75,0.18), transparent 60%),
+    linear-gradient(160deg, #fbf8f2 0%, var(--creme) 55%, #f1e9da 100%);
+}
+.hero-grid {
+  display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 50px; align-items: center;
+  padding: clamp(46px, 7vw, 90px) 0 clamp(56px, 8vw, 96px);
+}
+.hero-trust-pill {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(45,74,62,0.07); color: var(--verde);
+  padding: 7px 16px; border-radius: 100px; font-size: 0.82rem; font-weight: 600; margin-bottom: 22px;
+}
+.hero-trust-pill b { color: var(--terracota); }
+.hero h1 { margin-bottom: 20px; }
+.hero h1 em { font-style: italic; color: var(--terracota); font-weight: 500; }
+.hero-sub { font-size: 1.16rem; color: var(--texto-suave); max-width: 540px; margin-bottom: 32px; }
+.hero-btns { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 38px; }
+
+.hero-trustbar { display: flex; flex-wrap: wrap; gap: 10px 26px; }
+.hero-trustbar li { display: flex; align-items: center; gap: 9px; font-size: 0.92rem; font-weight: 500; color: var(--verde); }
+.hero-trustbar svg { width: 18px; height: 18px; color: var(--dourado); flex-shrink: 0; }
+
+/* Hero visual / collage */
+.hero-visual { position: relative; }
+.hero-photo {
+  border-radius: var(--radius-lg); aspect-ratio: 4 / 4.6; box-shadow: var(--shadow-lg);
+  position: relative; overflow: hidden;
+}
+.hero-stamp-float {
+  position: absolute; bottom: -26px; left: -26px; z-index: 5;
+  background: var(--creme); border-radius: 50%; padding: 10px;
+  box-shadow: var(--shadow);
+}
+.hero-photo-badge {
+  position: absolute; top: 20px; right: 20px; z-index: 4;
+  background: rgba(255,255,255,0.92); backdrop-filter: blur(6px);
+  border-radius: 14px; padding: 11px 16px; box-shadow: var(--shadow-sm);
+  font-size: 0.82rem; line-height: 1.3;
+}
+.hero-photo-badge b { display: block; color: var(--verde); font-size: 0.95rem; }
+.hero-photo-badge span { color: var(--texto-suave); }
+
+/* ============================================================
+   FOOD PHOTO PLACEHOLDERS
+   (substituir background por foto real: background-image: url('...'))
+   ============================================================ */
+.foodph {
+  position: relative; overflow: hidden;
+  background-size: cover; background-position: center;
+  display: grid; place-items: center; color: rgba(255,255,255,0.9);
+}
+.foodph::after {
+  content: attr(data-label);
+  position: absolute; inset: 0; display: grid; place-items: center;
+  font-family: var(--sans); font-weight: 600; font-size: 0.8rem; letter-spacing: 0.1em;
+  text-transform: uppercase; text-align: center; padding: 18px;
+  color: rgba(255,255,255,0.82); text-shadow: 0 1px 8px rgba(0,0,0,0.35);
+}
+.ph-1 { background-image: linear-gradient(135deg, #d9763f, #a83e1c); }
+.ph-2 { background-image: linear-gradient(135deg, #e0b15a, #b9863a); }
+.ph-3 { background-image: linear-gradient(135deg, #3a5d4d, #223a30); }
+.ph-4 { background-image: linear-gradient(135deg, #d98f6b, #b35c38); }
+.ph-5 { background-image: linear-gradient(135deg, #c98b5e, #8a5230); }
+.ph-6 { background-image: linear-gradient(135deg, #cba36a, #9c7438); }
+.ph-7 { background-image: linear-gradient(135deg, #4a6b59, #2d4a3e); }
+.ph-8 { background-image: linear-gradient(135deg, #d7724a, #b14a26); }
+
+/* ============================================================
+   SOBRE
+   ============================================================ */
+.sobre-grid { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: clamp(36px, 6vw, 70px); align-items: center; }
+.sobre-photo { border-radius: var(--radius-lg); aspect-ratio: 1/1; box-shadow: var(--shadow); position: relative; }
+.sobre-photo .hero-stamp-float { bottom: -24px; right: -22px; left: auto; }
+.sobre-text p { color: var(--texto-suave); margin-top: 18px; font-size: 1.06rem; }
+.sobre-text p strong { color: var(--verde); font-weight: 600; }
+.sobre-quote {
+  margin-top: 28px; padding: 20px 26px; border-left: 4px solid var(--dourado);
+  background: rgba(201,162,75,0.08); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-family: var(--serif); font-style: italic; font-size: 1.1rem; color: var(--verde);
+}
+
+/* ============================================================
+   SERVICOS / cards
+   ============================================================ */
+.card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.card {
+  background: var(--branco); border-radius: var(--radius); overflow: hidden;
+  box-shadow: var(--shadow-sm); transition: transform .22s, box-shadow .22s;
+  display: flex; flex-direction: column;
+}
+.card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+.card-img { aspect-ratio: 16/10; }
+.card-body { padding: 26px 24px 28px; display: flex; flex-direction: column; flex: 1; }
+.card-icon {
+  width: 46px; height: 46px; border-radius: 13px; background: rgba(201,98,45,0.1);
+  display: grid; place-items: center; color: var(--terracota); margin-bottom: 16px;
+}
+.card-icon svg { width: 24px; height: 24px; }
+.card h3 { margin-bottom: 10px; }
+.card p { color: var(--texto-suave); font-size: 0.98rem; flex: 1; }
+.card-link {
+  margin-top: 18px; font-weight: 600; color: var(--terracota); font-size: 0.95rem;
+  display: inline-flex; align-items: center; gap: 7px;
+}
+.card-link svg { width: 17px; height: 17px; transition: transform .15s; }
+.card-link:hover svg { transform: translateX(4px); }
+
+/* ============================================================
+   ESPECIALIDADES
+   ============================================================ */
+.spec-section { background: var(--verde); color: var(--creme); }
+.spec-section .eyebrow { color: var(--dourado); }
+.spec-section h2 { color: var(--creme); }
+.spec-section .section-head p { color: rgba(248,244,237,0.78); }
+.spec-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; }
+.spec-col {
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(248,244,237,0.12);
+  border-radius: var(--radius); padding: 26px 22px;
+}
+.spec-col h3 { color: var(--dourado); font-size: 1.3rem; margin-bottom: 18px; display: flex; align-items: center; gap: 10px; }
+.spec-col h3 svg { width: 22px; height: 22px; }
+.spec-col li {
+  padding: 8px 0; border-bottom: 1px solid rgba(248,244,237,0.1);
+  font-size: 0.95rem; color: rgba(248,244,237,0.9);
+}
+.spec-col li:last-child { border-bottom: 0; }
+
+/* ============================================================
+   PACOTES
+   ============================================================ */
+.pack-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; align-items: stretch; }
+.pack {
+  background: var(--branco); border-radius: var(--radius-lg); padding: 36px 30px 34px;
+  box-shadow: var(--shadow-sm); display: flex; flex-direction: column;
+  border: 1px solid rgba(45,74,62,0.07); position: relative; transition: transform .22s, box-shadow .22s;
+}
+.pack:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+.pack.featured { border-color: var(--terracota); box-shadow: var(--shadow); }
+.pack-tag {
+  position: absolute; top: -13px; left: 50%; transform: translateX(-50%);
+  background: var(--terracota); color: #fff; font-size: 0.72rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.1em; padding: 6px 16px; border-radius: 100px;
+}
+.pack h3 { margin-bottom: 8px; }
+.pack-price { font-family: var(--serif); font-style: italic; color: var(--terracota); font-size: 1.05rem; margin-bottom: 20px; }
+.pack ul { margin-bottom: 26px; flex: 1; }
+.pack li { padding: 9px 0; display: flex; gap: 11px; align-items: flex-start; font-size: 0.97rem; color: var(--texto-suave); border-bottom: 1px solid rgba(45,74,62,0.07); }
+.pack li svg { width: 18px; height: 18px; color: var(--dourado); flex-shrink: 0; margin-top: 3px; }
+.pack .btn { width: 100%; }
+.pack-note {
+  max-width: 720px; margin: 34px auto 0; text-align: center; color: var(--texto-suave);
+  font-size: 0.94rem; font-style: italic;
+}
+
+/* ============================================================
+   PORQUE ESCOLHER (feature icons)
+   ============================================================ */
+.why-section { background: linear-gradient(180deg, #f1e9da 0%, var(--creme) 100%); }
+.why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+.why-item {
+  background: var(--branco); border-radius: var(--radius); padding: 28px 24px;
+  box-shadow: var(--shadow-sm); transition: transform .2s;
+}
+.why-item:hover { transform: translateY(-4px); }
+.why-ico {
+  width: 50px; height: 50px; border-radius: 14px;
+  background: linear-gradient(135deg, var(--terracota), var(--dourado));
+  display: grid; place-items: center; color: #fff; margin-bottom: 16px;
+}
+.why-ico svg { width: 26px; height: 26px; }
+.why-item h3 { font-size: 1.12rem; margin-bottom: 7px; }
+.why-item p { font-size: 0.93rem; color: var(--texto-suave); }
+
+/* ============================================================
+   COMO FUNCIONA (steps)
+   ============================================================ */
+.steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; position: relative; }
+.step { text-align: center; padding: 0 8px; }
+.step-num {
+  width: 58px; height: 58px; margin: 0 auto 18px; border-radius: 50%;
+  background: var(--verde); color: var(--creme); display: grid; place-items: center;
+  font-family: var(--serif); font-weight: 700; font-size: 1.5rem;
+  box-shadow: 0 8px 20px rgba(45,74,62,0.25); position: relative; z-index: 2;
+}
+.step h3 { font-size: 1.1rem; margin-bottom: 8px; }
+.step p { font-size: 0.92rem; color: var(--texto-suave); }
+
+/* ============================================================
+   FORMULARIO  +  WhatsApp callout
+   ============================================================ */
+.form-section { background: var(--verde); color: var(--creme); }
+.form-wrap { display: grid; grid-template-columns: 0.82fr 1.18fr; gap: clamp(34px, 5vw, 64px); align-items: start; }
+.form-aside .eyebrow { color: var(--dourado); }
+.form-aside h2 { color: var(--creme); margin-bottom: 18px; }
+.form-aside p { color: rgba(248,244,237,0.82); margin-bottom: 28px; }
+
+/* WhatsApp primary callout inside form section */
+.wa-callout {
+  background: linear-gradient(135deg, var(--terracota), var(--terracota-dark));
+  border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow);
+}
+.wa-callout h3 { color: #fff; font-size: 1.3rem; margin-bottom: 8px; }
+.wa-callout p { color: rgba(255,255,255,0.9); font-size: 0.95rem; margin-bottom: 20px; }
+.wa-callout .btn { width: 100%; background: #fff; color: var(--terracota); box-shadow: none; }
+.wa-callout .btn:hover { background: var(--creme); }
+.wa-or { text-align: center; margin: 26px 0 22px; color: rgba(248,244,237,0.6); font-size: 0.86rem; position: relative; }
+.wa-or::before, .wa-or::after { content: ""; position: absolute; top: 50%; width: 38%; height: 1px; background: rgba(248,244,237,0.2); }
+.wa-or::before { left: 0; } .wa-or::after { right: 0; }
+.form-aside-contacts { font-size: 0.95rem; }
+.form-aside-contacts li { padding: 7px 0; display: flex; gap: 11px; align-items: center; color: rgba(248,244,237,0.88); }
+.form-aside-contacts svg { width: 18px; height: 18px; color: var(--dourado); flex-shrink: 0; }
+
+.form-card {
+  background: var(--branco); border-radius: var(--radius-lg); padding: clamp(26px, 4vw, 42px);
+  box-shadow: var(--shadow-lg);
+}
+.form-card h3 { margin-bottom: 6px; }
+.form-card > p { color: var(--texto-suave); font-size: 0.95rem; margin-bottom: 24px; }
+.fgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.field { margin-bottom: 16px; }
+.field.full { grid-column: 1 / -1; }
+.field label { display: block; font-size: 0.86rem; font-weight: 600; color: var(--verde); margin-bottom: 7px; }
+.field label .req { color: var(--terracota); }
+.field input, .field select, .field textarea {
+  width: 100%; padding: 13px 15px; border: 1.5px solid rgba(45,74,62,0.16);
+  border-radius: var(--radius-sm); font-family: var(--sans); font-size: 0.98rem; color: var(--texto);
+  background: #fdfbf7; transition: border-color .15s, box-shadow .15s;
+}
+.field input:focus, .field select:focus, .field textarea:focus {
+  outline: none; border-color: var(--terracota); box-shadow: 0 0 0 3px rgba(201,98,45,0.12);
+}
+.field textarea { resize: vertical; min-height: 95px; }
+.checks { display: grid; grid-template-columns: 1fr 1fr; gap: 9px 16px; margin-top: 4px; }
+.check {
+  display: flex; align-items: center; gap: 9px; font-size: 0.92rem; color: var(--texto-suave);
+  cursor: pointer; padding: 4px 0;
+}
+.check input { width: 18px; height: 18px; accent-color: var(--terracota); cursor: pointer; }
+.form-card .btn-submit { width: 100%; margin-top: 8px; background: var(--terracota); color: #fff; box-shadow: 0 10px 26px rgba(201,98,45,0.34); }
+.form-card .btn-submit:hover { background: var(--terracota-dark); }
+.form-card .btn-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+.form-status { margin-top: 16px; padding: 14px 16px; border-radius: var(--radius-sm); font-size: 0.92rem; display: none; }
+.form-status.ok { display: block; background: rgba(45,74,62,0.1); color: var(--verde); border: 1px solid rgba(45,74,62,0.2); }
+.form-status.err { display: block; background: rgba(201,98,45,0.12); color: var(--terracota-dark); border: 1px solid rgba(201,98,45,0.3); }
+.form-privacy { font-size: 0.8rem; color: var(--texto-suave); margin-top: 14px; text-align: center; }
+
+/* ============================================================
+   GALERIA
+   ============================================================ */
+.gallery { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 200px; gap: 16px; }
+.gallery .foodph { border-radius: var(--radius); }
+.gallery .g-tall { grid-row: span 2; }
+.gallery .g-wide { grid-column: span 2; }
+
+/* ============================================================
+   TESTEMUNHOS
+   ============================================================ */
+.test-section { background: linear-gradient(180deg, var(--creme) 0%, #f1e9da 100%); }
+.test-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.test {
+  background: var(--branco); border-radius: var(--radius); padding: 30px 28px;
+  box-shadow: var(--shadow-sm); display: flex; flex-direction: column;
+}
+.test-stars { color: var(--dourado); margin-bottom: 14px; font-size: 1.05rem; letter-spacing: 2px; }
+.test p { font-family: var(--serif); font-style: italic; font-size: 1.06rem; color: var(--verde); flex: 1; line-height: 1.5; }
+.test-author { margin-top: 20px; display: flex; align-items: center; gap: 12px; }
+.test-avatar { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, var(--terracota), var(--dourado)); display: grid; place-items: center; color: #fff; font-family: var(--serif); font-weight: 700; }
+.test-author b { display: block; color: var(--texto); font-size: 0.96rem; }
+.test-author span { font-size: 0.84rem; color: var(--texto-suave); }
+.hidden-extra { display: none; }
+.toggle-more { display: block; margin: 36px auto 0; }
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+.faq-wrap { max-width: 800px; margin: 0 auto; }
+.faq-item { background: var(--branco); border-radius: var(--radius-sm); margin-bottom: 14px; box-shadow: var(--shadow-sm); overflow: hidden; }
+.faq-q {
+  width: 100%; text-align: left; background: none; border: 0; cursor: pointer;
+  padding: 22px 24px; font-family: var(--serif); font-weight: 600; font-size: 1.12rem; color: var(--verde);
+  display: flex; justify-content: space-between; align-items: center; gap: 16px;
+}
+.faq-q .plus { font-size: 1.5rem; color: var(--terracota); transition: transform .25s; flex-shrink: 0; line-height: 1; }
+.faq-item.open .faq-q .plus { transform: rotate(45deg); }
+.faq-a { max-height: 0; overflow: hidden; transition: max-height .3s ease, padding .3s ease; padding: 0 24px; color: var(--texto-suave); }
+.faq-item.open .faq-a { max-height: 320px; padding: 0 24px 22px; }
+
+/* ============================================================
+   CTA FINAL
+   ============================================================ */
+.cta-final {
+  background:
+    radial-gradient(700px 400px at 20% 10%, rgba(201,162,75,0.22), transparent 60%),
+    linear-gradient(140deg, var(--terracota) 0%, var(--terracota-dark) 100%);
+  color: #fff; text-align: center; position: relative; overflow: hidden;
+}
+.cta-final h2 { color: #fff; max-width: 720px; margin: 0 auto 16px; }
+.cta-final p { color: rgba(255,255,255,0.92); max-width: 560px; margin: 0 auto 32px; font-size: 1.1rem; }
+.cta-final .hero-btns { justify-content: center; }
+.cta-final .btn-wa { background: #fff; color: var(--terracota); box-shadow: 0 12px 30px rgba(0,0,0,0.2); }
+.cta-final .btn-wa:hover { background: var(--creme); }
+.cta-stamp { margin: 0 auto 26px; filter: drop-shadow(0 6px 14px rgba(0,0,0,0.2)); color: #fff; }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer {
+  background: var(--verde-dark); color: rgba(248,244,237,0.82); padding: 60px 0 30px;
+}
+.foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+.foot-brand { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+.foot-brand .brand-name { color: var(--creme); }
+footer h4 { color: var(--dourado); font-family: var(--sans); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.14em; margin-bottom: 16px; }
+footer li { padding: 6px 0; font-size: 0.95rem; }
+footer a:hover { color: var(--dourado); }
+.foot-contact li { display: flex; gap: 11px; align-items: flex-start; }
+.foot-contact svg { width: 18px; height: 18px; color: var(--dourado); flex-shrink: 0; margin-top: 3px; }
+.foot-bottom { border-top: 1px solid rgba(248,244,237,0.12); padding-top: 24px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 0.85rem; color: rgba(248,244,237,0.6); }
+
+/* ============================================================
+   STICKY MOBILE WHATSAPP
+   ============================================================ */
+.sticky-wa { display: none; }
+.sticky-wa {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 100;
+  padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+  background: rgba(248,244,237,0.94); backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(45,74,62,0.1); box-shadow: 0 -6px 24px rgba(45,74,62,0.12);
+}
+.sticky-wa .btn { width: 100%; }
+
+/* Floating desktop WhatsApp bubble */
+.wa-float {
+  position: fixed; bottom: 26px; right: 26px; z-index: 95;
+  width: 60px; height: 60px; border-radius: 50%; background: var(--terracota);
+  display: grid; place-items: center; box-shadow: 0 10px 28px rgba(201,98,45,0.45);
+  color: #fff; transition: transform .2s; animation: wapulse 2.6s infinite;
+}
+.wa-float:hover { transform: scale(1.08); }
+.wa-float svg { width: 30px; height: 30px; }
+@keyframes wapulse { 0%,100% { box-shadow: 0 10px 28px rgba(201,98,45,0.45); } 50% { box-shadow: 0 10px 28px rgba(201,98,45,0.45), 0 0 0 12px rgba(201,98,45,0.0); } }
+
+/* ============================================================
+   REVEAL ANIMATION
+   ============================================================ */
+.reveal { opacity: 0; transform: translateY(26px); transition: opacity .6s ease, transform .6s ease; }
+.reveal.in { opacity: 1; transform: none; }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 980px) {
+  .hero-grid, .sobre-grid, .form-wrap { grid-template-columns: 1fr; }
+  .hero-visual { max-width: 440px; margin: 0 auto; order: -1; }
+  .card-grid, .pack-grid, .test-grid { grid-template-columns: repeat(2, 1fr); }
+  .spec-grid { grid-template-columns: repeat(2, 1fr); }
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .steps { grid-template-columns: repeat(2, 1fr); gap: 30px 18px; }
+  .foot-grid { grid-template-columns: 1fr 1fr; }
+  .nav-links { display: none; }
+  .burger { display: block; }
+  .nav-links.open {
+    display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0;
+    background: var(--creme); padding: 18px 22px; gap: 6px; box-shadow: var(--shadow); align-items: flex-start;
+    border-bottom: 1px solid rgba(45,74,62,0.1);
+  }
+  .nav-links.open a { padding: 10px 0; width: 100%; }
+  .nav-cta .btn-wa { display: none; }
+}
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .card-grid, .pack-grid, .test-grid, .spec-grid, .why-grid, .steps, .foot-grid { grid-template-columns: 1fr; }
+  .fgrid, .checks { grid-template-columns: 1fr; }
+  .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 150px; }
+  .gallery .g-wide { grid-column: span 2; }
+  .gallery .g-tall { grid-row: span 1; }
+  .hero-btns .btn, .cta-final .hero-btns .btn { width: 100%; }
+  .sticky-wa { display: block; }
+  .wa-float { display: none; }
+  body { padding-bottom: 76px; }
+  .foot-bottom { flex-direction: column; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============================== NAV ============================== -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="brand" aria-label="Nara Mendes Catering">
+      <span class="brand-mark">N</span>
+      <span class="brand-name">Nara Mendes<small>Catering Luso-Brasileiro</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#especialidades">Especialidades</a>
+      <a href="#pacotes">Pacotes</a>
+      <a href="#orcamento">Orçamento</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-wa btn-sm wa-link" href="#" target="_blank" rel="noopener" data-evento="o meu evento">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.207zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============================== HERO ============================== -->
+<section class="hero" id="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text reveal">
+      <span class="hero-trust-pill">⭐ Recomendada por famílias do <b>&nbsp;Grande Porto</b></span>
+      <h1>Catering <em>luso-brasileiro</em> para festas, aniversários e eventos no Grande Porto.</h1>
+      <p class="hero-sub">Mais de 10 anos de experiência a criar momentos especiais com salgados, bolos decorados, doces, almoços e jantares cheios de sabor, cuidado e tradição.</p>
+      <div class="hero-btns">
+        <a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener" data-evento="o meu evento">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.207zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          Solicitar Orçamento pelo WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="#especialidades">Ver Especialidades</a>
+      </div>
+      <ul class="hero-trustbar">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> +10 anos de experiência</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Atendimento no Grande Porto</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Menus personalizados</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Festas, aniversários e eventos</li>
+      </ul>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="hero-photo foodph ph-1" data-label="Foto real: mesa de catering / salgados brasileiros">
+        <div class="hero-photo-badge">
+          <b>Menus à medida</b>
+          <span>para cada evento</span>
+        </div>
+      </div>
+      <!-- Selo +10 anos -->
+      <div class="hero-stamp-float">
+        <div class="stamp" aria-label="Mais de 10 anos de experiência">
+          <svg viewBox="0 0 124 124" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <path id="circlePathTop" d="M 62,62 m -46,0 a 46,46 0 1 1 92,0" />
+              <path id="circlePathBot" d="M 62,62 m 46,0 a 46,46 0 1 1 -92,0" />
+            </defs>
+            <circle cx="62" cy="62" r="58" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="2 5"/>
+            <circle cx="62" cy="62" r="50" fill="var(--creme)" stroke="currentColor" stroke-width="2.5"/>
+            <text font-family="Inter, sans-serif" font-size="9.5" font-weight="700" letter-spacing="2.2" fill="currentColor">
+              <textPath href="#circlePathTop" startOffset="50%" text-anchor="middle">EXPERIÊNCIA • SABOR •</textPath>
+            </text>
+            <text font-family="Inter, sans-serif" font-size="9.5" font-weight="700" letter-spacing="2.2" fill="currentColor">
+              <textPath href="#circlePathBot" startOffset="50%" text-anchor="middle">CUIDADO • TRADIÇÃO •</textPath>
+            </text>
+            <text x="62" y="58" text-anchor="middle" font-family="Fraunces, serif" font-size="26" font-weight="700" fill="currentColor">+10</text>
+            <text x="62" y="76" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" letter-spacing="3" fill="currentColor">ANOS</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== SOBRE ============================== -->
+<section id="sobre">
+  <div class="wrap sobre-grid">
+    <div class="sobre-photo foodph ph-3 reveal" data-label="Foto real: Nara Mendes na cozinha">
+      <div class="hero-stamp-float">
+        <div class="stamp small">
+          <svg viewBox="0 0 124 124" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="62" cy="62" r="58" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="2 5"/>
+            <circle cx="62" cy="62" r="50" fill="var(--creme)" stroke="currentColor" stroke-width="2.5"/>
+            <text x="62" y="58" text-anchor="middle" font-family="Fraunces, serif" font-size="26" font-weight="700" fill="currentColor">+10</text>
+            <text x="62" y="76" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" letter-spacing="3" fill="currentColor">ANOS</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="sobre-text reveal">
+      <span class="eyebrow">A Nara Mendes</span>
+      <h2>Da cozinha feita com amor a uma marca de catering preparada para eventos.</h2>
+      <p>Nara Mendes construiu a sua reputação ao longo de mais de 10 anos, cozinhando para famílias, festas e clientes que chegaram através de recomendações. A sua cozinha une a <strong>generosidade brasileira</strong> ao <strong>cuidado da tradição portuguesa</strong>.</p>
+      <p>Agora, inicia uma nova fase: uma marca de catering mais estruturada, com presença profissional, atendimento organizado e uma equipa em desenvolvimento para servir melhor <strong>Matosinhos, Porto e o Grande Porto</strong>.</p>
+      <div class="sobre-quote">"Cada evento é tratado como se fosse uma festa da minha própria família — com sabor, dedicação e atenção a cada detalhe."</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== SERVIÇOS ============================== -->
+<section id="servicos">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">O que fazemos</span>
+      <h2>Catering completo para cada tipo de celebração</h2>
+      <p>De aniversários íntimos a eventos empresariais — preparamos tudo à medida do seu momento, com sabores brasileiros e portugueses.</p>
+    </div>
+    <div class="card-grid">
+      <!-- 1 -->
+      <article class="card reveal">
+        <div class="card-img foodph ph-2" data-label="Foto: mesa de aniversário"></div>
+        <div class="card-body">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10v10H4V10M2 7h20l-2 3H4L2 7zM12 22V7M7 7s-1-4 5-4M17 7s1-4-5-4"/></svg></div>
+          <h3>Catering para Aniversários</h3>
+          <p>Mesas de salgados, doces e bolo decorado pensadas para festas de aniversário inesquecíveis, de crianças a adultos, com apresentação cuidada e sabor caseiro.</p>
+          <a class="card-link wa-link" href="#" target="_blank" rel="noopener" data-evento="um aniversário">Pedir orçamento <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <!-- 2 -->
+      <article class="card reveal">
+        <div class="card-img foodph ph-4" data-label="Foto: festa familiar"></div>
+        <div class="card-body">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+          <h3>Festas Familiares e Celebrações</h3>
+          <p>Batizados, comunhões, reuniões de família e datas especiais. Servimos menus completos e variados que agradam a todas as gerações à mesa.</p>
+          <a class="card-link wa-link" href="#" target="_blank" rel="noopener" data-evento="uma festa familiar">Pedir orçamento <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <!-- 3 -->
+      <article class="card reveal">
+        <div class="card-img foodph ph-5" data-label="Foto: jantar privado"></div>
+        <div class="card-body">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11h18M5 11V7a2 2 0 012-2h10a2 2 0 012 2v4M4 11v6a2 2 0 002 2h12a2 2 0 002-2v-6M8 19v2M16 19v2"/></svg></div>
+          <h3>Almoços e Jantares Privados</h3>
+          <p>Refeições personalizadas servidas em sua casa ou no local do evento, com pratos brasileiros e portugueses preparados de raiz para os seus convidados.</p>
+          <a class="card-link wa-link" href="#" target="_blank" rel="noopener" data-evento="um almoço ou jantar privado">Pedir orçamento <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <!-- 4 -->
+      <article class="card reveal">
+        <div class="card-img foodph ph-7" data-label="Foto: coffee break empresarial"></div>
+        <div class="card-body">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg></div>
+          <h3>Eventos Empresariais e Coffee Breaks</h3>
+          <p>Coffee breaks, reuniões e pequenos eventos de empresa com salgados, doces e snacks de qualidade, entregues com pontualidade e apresentação profissional.</p>
+          <a class="card-link wa-link" href="#" target="_blank" rel="noopener" data-evento="um evento empresarial / coffee break">Pedir orçamento <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <!-- 5 -->
+      <article class="card reveal">
+        <div class="card-img foodph ph-6" data-label="Foto: bolos decorados"></div>
+        <div class="card-body">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-8a2 2 0 00-2-2H6a2 2 0 00-2 2v8M2 21h20M12 11V7M12 7a2 2 0 100-4 2 2 0 000 4z"/></svg></div>
+          <h3>Bolos Decorados e Tortas</h3>
+          <p>Bolos temáticos, tortas e sobremesas decoradas à mão para aniversários e celebrações — bonitos de ver e deliciosos de provar.</p>
+          <a class="card-link wa-link" href="#" target="_blank" rel="noopener" data-evento="um bolo decorado / torta">Pedir orçamento <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <!-- 6 -->
+      <article class="card reveal">
+        <div class="card-img foodph ph-8" data-label="Foto: salgados e docinhos"></div>
+        <div class="card-body">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 00-7 7c0 3 2 5 2 8h10c0-3 2-5 2-8a7 7 0 00-7-7zM9 22h6"/></svg></div>
+          <h3>Salgados e Doces por Encomenda</h3>
+          <p>Coxinhas, kibes, pastéis, brigadeiros, beijinhos e muito mais, por encomenda para a sua festa ou para reforçar a mesa de qualquer celebração.</p>
+          <a class="card-link wa-link" href="#" target="_blank" rel="noopener" data-evento="salgados e doces por encomenda">Pedir orçamento <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== ESPECIALIDADES ============================== -->
+<section class="spec-section" id="especialidades">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Sabores de cá e de lá</span>
+      <h2>As nossas especialidades</h2>
+      <p>Uma seleção que une o melhor da cozinha brasileira e portuguesa. Pode combinar categorias e adaptar tudo ao seu evento.</p>
+    </div>
+    <div class="spec-grid">
+      <div class="spec-col reveal">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 00-7 7c0 3 2 5 2 8h10c0-3 2-5 2-8a7 7 0 00-7-7z"/></svg> Salgados</h3>
+        <ul>
+          <li>Coxinha de frango</li>
+          <li>Kibe</li>
+          <li>Pastel (vários recheios)</li>
+          <li>Bolinha de queijo</li>
+          <li>Empada</li>
+          <li>Enroladinho de salsicha</li>
+          <li>Risólis</li>
+        </ul>
+      </div>
+      <div class="spec-col reveal">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 00-7 7c0 3 2 5 2 8h10c0-3 2-5 2-8a7 7 0 00-7-7z"/></svg> Doces</h3>
+        <ul>
+          <li>Brigadeiro</li>
+          <li>Beijinho</li>
+          <li>Cajuzinho</li>
+          <li>Docinhos gourmet</li>
+          <li>Pudim</li>
+          <li>Mousses e taças</li>
+          <li>Bem-casado</li>
+        </ul>
+      </div>
+      <div class="spec-col reveal">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-8a2 2 0 00-2-2H6a2 2 0 00-2 2v8M2 21h20"/></svg> Bolos</h3>
+        <ul>
+          <li>Bolos decorados temáticos</li>
+          <li>Bolos de aniversário</li>
+          <li>Tortas doces</li>
+          <li>Naked cakes</li>
+          <li>Bolo no pote</li>
+          <li>Cupcakes</li>
+        </ul>
+      </div>
+      <div class="spec-col reveal">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11h18M5 11V7a2 2 0 012-2h10a2 2 0 012 2v4"/></svg> Pratos Brasileiros</h3>
+        <ul>
+          <li>Feijoada</li>
+          <li>Strogonoff</li>
+          <li>Arroz à brasileira</li>
+          <li>Escondidinho</li>
+          <li>Moqueca</li>
+          <li>Farofa e acompanhamentos</li>
+        </ul>
+      </div>
+      <div class="spec-col reveal">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11h18M5 11V7a2 2 0 012-2h10a2 2 0 012 2v4"/></svg> Pratos Portugueses</h3>
+        <ul>
+          <li>Bacalhau (várias receitas)</li>
+          <li>Arroz de pato</li>
+          <li>Rojões</li>
+          <li>Caldo verde</li>
+          <li>Carnes assadas</li>
+          <li>Petiscos tradicionais</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PACOTES ============================== -->
+<section id="pacotes">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Pacotes sugeridos</span>
+      <h2>Soluções pensadas para o seu evento</h2>
+      <p>Pontos de partida flexíveis — todos personalizáveis. Peça já o seu orçamento sem compromisso pelo WhatsApp.</p>
+    </div>
+    <div class="pack-grid">
+      <div class="pack reveal">
+        <h3>Pacote Festa Essencial</h3>
+        <div class="pack-price">Ideal para festas pequenas</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Seleção de salgados variados</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Doces tradicionais brasileiros</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Apresentação cuidada</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Entrega no Grande Porto</li>
+        </ul>
+        <a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener" data-evento="o Pacote Festa Essencial">Pedir orçamento</a>
+      </div>
+      <div class="pack featured reveal">
+        <span class="pack-tag">Mais pedido</span>
+        <h3>Pacote Mesa Completa</h3>
+        <div class="pack-price">Festas e aniversários</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Salgados + doces variados</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Bolo decorado à escolha</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Mesa montada e decorada</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Opções luso-brasileiras</li>
+        </ul>
+        <a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener" data-evento="o Pacote Mesa Completa">Pedir orçamento</a>
+      </div>
+      <div class="pack reveal">
+        <h3>Pacote Almoço ou Jantar Especial</h3>
+        <div class="pack-price">Refeições completas</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Pratos quentes à escolha</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Acompanhamentos e entradas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Sobremesa incluída</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Cozinha brasileira e portuguesa</li>
+        </ul>
+        <a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener" data-evento="o Pacote Almoço ou Jantar Especial">Pedir orçamento</a>
+      </div>
+    </div>
+    <p class="pack-note">Todos os pacotes são personalizados conforme número de convidados, local, data, tipo de evento e preferências do cliente.</p>
+  </div>
+</section>
+
+<!-- ============================== PORQUE ESCOLHER ============================== -->
+<section class="why-section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Confiança que se prova</span>
+      <h2>Porquê escolher a Nara Mendes</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item reveal"><div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><h3>+10 anos de experiência</h3><p>Uma reputação construída ao longo de uma década, festa após festa.</p></div>
+      <div class="why-item reveal"><div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 00-7 7c0 3 2 5 2 8h10c0-3 2-5 2-8a7 7 0 00-7-7z"/></svg></div><h3>Cozinha brasileira e portuguesa</h3><p>O melhor dos dois mundos numa só mesa, com autenticidade.</p></div>
+      <div class="why-item reveal"><div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div><h3>Atendimento personalizado</h3><p>Acompanhamento próximo e organizado do primeiro contacto ao evento.</p></div>
+      <div class="why-item reveal"><div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div><h3>Menus adaptados</h3><p>Ajustamos quantidades, pratos e estilo ao seu gosto e orçamento.</p></div>
+      <div class="why-item reveal"><div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg></div><h3>Sabor caseiro, apresentação cuidada</h3><p>Comida feita com amor, servida com elegância digna de um evento.</p></div>
+      <div class="why-item reveal"><div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div><h3>Encomendas organizadas</h3><p>Planeamento com antecedência para que tudo corra na perfeição.</p></div>
+      <div class="why-item reveal"><div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><h3>Atendimento no Grande Porto</h3><p>Matosinhos, Porto, Gaia, Maia, Gondomar e arredores.</p></div>
+      <div class="why-item reveal"><div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87"/></svg></div><h3>Equipa em desenvolvimento</h3><p>Uma estrutura a crescer para servir cada vez mais e melhor.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== COMO FUNCIONA ============================== -->
+<section id="como-funciona">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Simples e organizado</span>
+      <h2>Como funciona</h2>
+      <p>Do primeiro "olá" à festa pronta — em cinco passos descomplicados.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="step-num">1</div><h3>Contacto</h3><p>Fala connosco pelo WhatsApp ou formulário e conta-nos sobre o seu evento.</p></div>
+      <div class="step reveal"><div class="step-num">2</div><h3>Orçamento</h3><p>Recebe uma proposta personalizada conforme convidados, data e preferências.</p></div>
+      <div class="step reveal"><div class="step-num">3</div><h3>Menu à medida</h3><p>Definimos juntos os pratos, salgados, doces e bolos do seu evento.</p></div>
+      <div class="step reveal"><div class="step-num">4</div><h3>Confirmação</h3><p>Acertamos os detalhes, data e local com tudo organizado com antecedência.</p></div>
+      <div class="step reveal"><div class="step-num">5</div><h3>O grande dia</h3><p>Preparamos e entregamos tudo a tempo, para você só aproveitar a festa.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FORMULÁRIO / ORÇAMENTO ============================== -->
+<section class="form-section" id="orcamento">
+  <div class="wrap form-wrap">
+    <div class="form-aside reveal">
+      <span class="eyebrow">Peça o seu orçamento</span>
+      <h2>Vamos preparar o seu evento juntos</h2>
+      <p>A forma mais rápida é pelo WhatsApp — respondemos com toda a atenção. Prefere deixar os detalhes por escrito? Use o formulário ao lado.</p>
+
+      <div class="wa-callout">
+        <h3>📲 Resposta mais rápida</h3>
+        <p>Fale diretamente com a Nara pelo WhatsApp e receba o orçamento sem complicações.</p>
+        <a class="btn wa-link" href="#" target="_blank" rel="noopener" data-evento="o meu evento">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.207zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          967 323 308 · WhatsApp
+        </a>
+      </div>
+
+      <div class="wa-or">ou contacte-nos por aqui</div>
+
+      <ul class="form-aside-contacts">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Rua Dom Nuno Álvares Pereira, 240, Matosinhos</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg> @naruscades</li>
+      </ul>
+    </div>
+
+    <!-- FORM -->
+    <div class="form-card reveal">
+      <h3>Formulário de orçamento</h3>
+      <p>Preencha os campos abaixo e entraremos em contacto consigo o mais breve possível.</p>
+      <form id="orcamentoForm" novalidate>
+        <div class="fgrid">
+          <div class="field">
+            <label for="nome">Nome <span class="req">*</span></label>
+            <input type="text" id="nome" name="nome" required placeholder="O seu nome" />
+          </div>
+          <div class="field">
+            <label for="telefone">Telefone / WhatsApp <span class="req">*</span></label>
+            <input type="tel" id="telefone" name="telefone" required placeholder="9XX XXX XXX" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="o.seu@email.com" />
+          </div>
+          <div class="field">
+            <label for="data_evento">Data do evento</label>
+            <input type="date" id="data_evento" name="data_evento" />
+          </div>
+          <div class="field">
+            <label for="local_evento">Local do evento</label>
+            <input type="text" id="local_evento" name="local_evento" placeholder="Cidade / morada" />
+          </div>
+          <div class="field">
+            <label for="tipo_evento">Tipo de evento</label>
+            <select id="tipo_evento" name="tipo_evento">
+              <option value="">Selecione...</option>
+              <option>Aniversário</option>
+              <option>Batizado / Comunhão</option>
+              <option>Festa familiar</option>
+              <option>Almoço / Jantar privado</option>
+              <option>Evento empresarial / Coffee break</option>
+              <option>Encomenda de salgados / doces</option>
+              <option>Outro</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="convidados">Número estimado de convidados</label>
+            <input type="number" id="convidados" name="convidados" min="1" placeholder="Ex.: 30" />
+          </div>
+          <div class="field"></div>
+        </div>
+
+        <div class="field full">
+          <label>Serviço desejado</label>
+          <div class="checks">
+            <label class="check"><input type="checkbox" name="servico" value="Salgados" /> Salgados</label>
+            <label class="check"><input type="checkbox" name="servico" value="Doces" /> Doces</label>
+            <label class="check"><input type="checkbox" name="servico" value="Bolo decorado" /> Bolo decorado</label>
+            <label class="check"><input type="checkbox" name="servico" value="Almoço" /> Almoço</label>
+            <label class="check"><input type="checkbox" name="servico" value="Jantar" /> Jantar</label>
+            <label class="check"><input type="checkbox" name="servico" value="Mesa completa" /> Mesa completa</label>
+            <label class="check"><input type="checkbox" name="servico" value="Coffee break" /> Coffee break</label>
+            <label class="check"><input type="checkbox" name="servico" value="Ainda não sei" /> Ainda não sei</label>
+          </div>
+        </div>
+
+        <div class="field full">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Conte-nos mais sobre o seu evento..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-submit" id="submitBtn">Enviar Pedido de Orçamento</button>
+        <div class="form-status" id="formStatus"></div>
+        <p class="form-privacy">Os seus dados são usados apenas para responder ao seu pedido de orçamento.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== GALERIA ============================== -->
+<section id="galeria">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Um aperitivo</span>
+      <h2>Galeria de sabores</h2>
+      <p>Alguns momentos e criações da nossa cozinha. As fotografias reais serão adicionadas em breve.</p>
+    </div>
+    <div class="gallery">
+      <div class="foodph ph-1 g-tall reveal" data-label="Salgados brasileiros"></div>
+      <div class="foodph ph-6 g-wide reveal" data-label="Bolos decorados"></div>
+      <div class="foodph ph-2 reveal" data-label="Mesa de aniversário"></div>
+      <div class="foodph ph-8 reveal" data-label="Docinhos"></div>
+      <div class="foodph ph-3 g-wide reveal" data-label="Pratos quentes"></div>
+      <div class="foodph ph-4 reveal" data-label="Catering familiar"></div>
+      <div class="foodph ph-7 reveal" data-label="Coffee break"></div>
+      <div class="foodph ph-5 g-tall reveal" data-label="Sobremesas"></div>
+      <div class="foodph ph-2 reveal" data-label="Mesa completa"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== TESTEMUNHOS ============================== -->
+<section class="test-section" id="testemunhos">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Quem prova, recomenda</span>
+      <h2>O que dizem os nossos clientes</h2>
+    </div>
+    <div class="test-grid" id="testGrid">
+      <div class="test reveal">
+        <div class="test-stars">★★★★★</div>
+        <p>"A mesa de salgados foi o sucesso da festa de aniversário do meu filho. Tudo fresco, saboroso e lindamente apresentado. Já recomendei a toda a família!"</p>
+        <div class="test-author"><div class="test-avatar">A</div><div><b>Ana Ferreira</b><span>Aniversário · Matosinhos</span></div></div>
+      </div>
+      <div class="test reveal">
+        <div class="test-stars">★★★★★</div>
+        <p>"Contratámos a Nara para o batizado da nossa filha. Profissionalismo do início ao fim e a feijoada foi de chorar por mais. Sentimos o carinho em cada detalhe."</p>
+        <div class="test-author"><div class="test-avatar">R</div><div><b>Rui & Camila</b><span>Batizado · Porto</span></div></div>
+      </div>
+      <div class="test reveal">
+        <div class="test-stars">★★★★★</div>
+        <p>"O coffee break do nosso evento de empresa impressionou todos os colegas. Pontualidade, qualidade e uma apresentação impecável. Voltaremos a contratar."</p>
+        <div class="test-author"><div class="test-avatar">M</div><div><b>Marta Sousa</b><span>Evento empresarial · Maia</span></div></div>
+      </div>
+      <!-- extras -->
+      <div class="test reveal hidden-extra extra">
+        <div class="test-stars">★★★★★</div>
+        <p>"O bolo decorado superou todas as expectativas — bonito e delicioso. Os docinhos desapareceram num instante. Obrigada, Nara!"</p>
+        <div class="test-author"><div class="test-avatar">S</div><div><b>Sofia Lima</b><span>Festa familiar · Gaia</span></div></div>
+      </div>
+      <div class="test reveal hidden-extra extra">
+        <div class="test-stars">★★★★★</div>
+        <p>"Jantar privado em casa com pratos portugueses e brasileiros. Os convidados não pararam de elogiar. Um serviço de altíssima qualidade."</p>
+        <div class="test-author"><div class="test-avatar">J</div><div><b>João Pereira</b><span>Jantar privado · Gondomar</span></div></div>
+      </div>
+    </div>
+    <button class="btn btn-ghost toggle-more" data-target="extra" data-grid="testGrid">Ver mais testemunhos</button>
+  </div>
+</section>
+
+<!-- ============================== FAQ ============================== -->
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Dúvidas frequentes</span>
+      <h2>Perguntas frequentes</h2>
+    </div>
+    <div class="faq-wrap" id="faqWrap">
+      <div class="faq-item reveal">
+        <button class="faq-q">Com quanta antecedência devo encomendar? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Recomendamos o contacto com o máximo de antecedência possível, sobretudo para eventos maiores e datas concorridas. Para encomendas mais pequenas conseguimos, muitas vezes, dar resposta com poucos dias. Fale connosco pelo WhatsApp e confirmamos a disponibilidade.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Em que zonas fazem entregas e serviço? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Servimos Matosinhos, Porto, Vila Nova de Gaia, Maia, Gondomar e toda a região do Grande Porto. Para outras localidades, fale connosco para avaliarmos a possibilidade.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Os menus podem ser adaptados ao meu orçamento? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Sim. Todos os menus e pacotes são personalizados conforme o número de convidados, tipo de evento e preferências. Construímos uma proposta à medida do seu momento e do seu orçamento.</p></div>
+      </div>
+      <!-- extras -->
+      <div class="faq-item reveal hidden-extra extra-faq">
+        <button class="faq-q">Fazem opções para restrições alimentares? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Sempre que possível adaptamos as receitas a preferências e necessidades específicas. Indique-nos as restrições no contacto inicial e procuramos as melhores soluções para todos os convidados.</p></div>
+      </div>
+      <div class="faq-item reveal hidden-extra extra-faq">
+        <button class="faq-q">Como funciona o pagamento e a confirmação? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Após aprovar o orçamento, acertamos os detalhes de confirmação e pagamento de forma simples e organizada. Todos os pormenores são combinados antecipadamente para garantir tranquilidade no dia do evento.</p></div>
+      </div>
+    </div>
+    <button class="btn btn-ghost toggle-more" data-target="extra-faq" data-grid="faqWrap">Ver mais perguntas</button>
+  </div>
+</section>
+
+<!-- ============================== CTA FINAL ============================== -->
+<section class="cta-final">
+  <div class="wrap reveal">
+    <div class="cta-stamp">
+      <div class="stamp small" style="margin:0 auto;">
+        <svg viewBox="0 0 124 124" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="62" cy="62" r="58" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="2 5"/>
+          <circle cx="62" cy="62" r="50" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <text x="62" y="58" text-anchor="middle" font-family="Fraunces, serif" font-size="26" font-weight="700" fill="currentColor">+10</text>
+          <text x="62" y="76" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" letter-spacing="3" fill="currentColor">ANOS</text>
+        </svg>
+      </div>
+    </div>
+    <h2>Vamos preparar algo especial para o seu evento?</h2>
+    <p>Conte-nos a sua ideia e receba um orçamento personalizado, sem compromisso.</p>
+    <div class="hero-btns">
+      <a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener" data-evento="o meu evento">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.207zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        Solicitar Orçamento no WhatsApp
+      </a>
+      <a class="btn btn-ghost-light" href="#orcamento">Preencher Formulário</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FOOTER ============================== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <span class="brand-mark">N</span>
+          <span class="brand-name">Nara Mendes<small>Catering Luso-Brasileiro</small></span>
+        </div>
+        <p style="max-width:330px;font-size:0.95rem;">Sabores do Brasil e de Portugal para festas, aniversários e eventos no Grande Porto. Catering com mais de uma década de dedicação.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#sobre">Sobre a Nara</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#especialidades">Especialidades</a></li>
+          <li><a href="#pacotes">Pacotes</a></li>
+          <li><a href="#orcamento">Pedir orçamento</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contactos</h4>
+        <ul class="foot-contact">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Rua Dom Nuno Álvares Pereira, 240, Matosinhos</li>
+          <li><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.207z"/></svg> <a class="wa-link" href="#" target="_blank" rel="noopener" data-evento="o meu evento">WhatsApp: 967 323 308</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg> <a href="https://www.instagram.com/naruscades" target="_blank" rel="noopener">@naruscades</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Nara Mendes Catering Luso-Brasileiro · Matosinhos, Porto e Grande Porto</span>
+      <span>Catering luso-brasileiro · Festas · Aniversários · Eventos</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================== STICKY MOBILE WHATSAPP ============================== -->
+<div class="sticky-wa">
+  <a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener" data-evento="o meu evento">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.207zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    Solicitar Orçamento pelo WhatsApp
+  </a>
+</div>
+
+<!-- Floating desktop bubble -->
+<a class="wa-float wa-link" href="#" target="_blank" rel="noopener" data-evento="o meu evento" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.207zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<script>
+/* ============================================================
+   CONFIGURAÇÃO
+   ============================================================ */
+// >>> SUBSTITUIR pelo endpoint do webhook (n8n) <<<
+const WEBHOOK_URL = "SUBSTITUIR_AQUI";
+
+const WHATSAPP_NUMBER = "351967323308";
+
+/* ============================================================
+   WHATSAPP LINKS — mensagem pré-formatada por contexto
+   ============================================================ */
+document.querySelectorAll('.wa-link').forEach(function (el) {
+  const evento = el.getAttribute('data-evento') || 'o meu evento';
+  const msg = "Olá Nara! Gostaria de um orçamento para " + evento + ".";
+  el.setAttribute('href', "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(msg));
+});
+
+/* ============================================================
+   NAV — burger + ano
+   ============================================================ */
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('navLinks');
+burger.addEventListener('click', function () { navLinks.classList.toggle('open'); });
+navLinks.querySelectorAll('a').forEach(function (a) {
+  a.addEventListener('click', function () { navLinks.classList.remove('open'); });
+});
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ============================================================
+   FAQ accordion
+   ============================================================ */
+document.querySelectorAll('.faq-q').forEach(function (q) {
+  q.addEventListener('click', function () {
+    q.parentElement.classList.toggle('open');
+  });
+});
+
+/* ============================================================
+   "Ver mais" (testemunhos / faq)
+   ============================================================ */
+document.querySelectorAll('.toggle-more').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    const cls = btn.getAttribute('data-target');
+    const items = document.querySelectorAll('.' + cls);
+    const showing = items[0] && !items[0].classList.contains('hidden-extra');
+    items.forEach(function (it) {
+      it.classList.toggle('hidden-extra', showing);
+      if (!showing) { it.classList.add('in'); }
+    });
+    btn.textContent = showing
+      ? (cls === 'extra' ? 'Ver mais testemunhos' : 'Ver mais perguntas')
+      : 'Ver menos';
+  });
+});
+
+/* ============================================================
+   REVEAL on scroll
+   ============================================================ */
+const io = new IntersectionObserver(function (entries) {
+  entries.forEach(function (e) {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+
+/* ============================================================
+   FORMULÁRIO — validação + envio via webhook (POST JSON)
+   ============================================================ */
+const form = document.getElementById('orcamentoForm');
+const statusEl = document.getElementById('formStatus');
+const submitBtn = document.getElementById('submitBtn');
+
+form.addEventListener('submit', async function (ev) {
+  ev.preventDefault();
+  statusEl.className = 'form-status';
+
+  // validação simples
+  const nome = form.nome.value.trim();
+  const telefone = form.telefone.value.trim();
+  if (!nome || !telefone) {
+    statusEl.className = 'form-status err';
+    statusEl.textContent = 'Por favor preencha o nome e o telefone/WhatsApp.';
+    return;
+  }
+
+  // recolher serviços (checkboxes)
+  const servicos = Array.from(form.querySelectorAll('input[name="servico"]:checked'))
+    .map(function (c) { return c.value; });
+
+  const payload = {
+    nome: nome,
+    telefone: telefone,
+    email: form.email.value.trim(),
+    data_evento: form.data_evento.value,
+    local_evento: form.local_evento.value.trim(),
+    tipo_evento: form.tipo_evento.value,
+    convidados: form.convidados.value,
+    servicos: servicos,
+    mensagem: form.mensagem.value.trim(),
+    origem: "Landing Page - Nara Mendes Catering",
+    pagina: window.location.href,
+    timestamp: new Date().toISOString()
+  };
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'A enviar...';
+
+  try {
+    if (WEBHOOK_URL === "SUBSTITUIR_AQUI") {
+      // Webhook ainda não configurado — log para testes
+      console.log("[Formulário] WEBHOOK_URL não configurado. Payload:", payload);
+      throw new Error("webhook-nao-configurado");
+    }
+
+    const res = await fetch(WEBHOOK_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    });
+
+    if (!res.ok) throw new Error("HTTP " + res.status);
+
+    statusEl.className = 'form-status ok';
+    statusEl.textContent = 'Pedido enviado com sucesso! Entraremos em contacto consigo em breve. 🧡';
+    form.reset();
+  } catch (err) {
+    // Fallback: oferecer WhatsApp com os dados
+    const waMsg = "Olá Nara! Gostaria de um orçamento.\n\n" +
+      "Nome: " + payload.nome + "\n" +
+      "Telefone: " + payload.telefone + "\n" +
+      (payload.tipo_evento ? "Tipo de evento: " + payload.tipo_evento + "\n" : "") +
+      (payload.data_evento ? "Data: " + payload.data_evento + "\n" : "") +
+      (payload.convidados ? "Convidados: " + payload.convidados + "\n" : "") +
+      (servicos.length ? "Serviços: " + servicos.join(", ") + "\n" : "") +
+      (payload.mensagem ? "Mensagem: " + payload.mensagem : "");
+    const waUrl = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(waMsg);
+
+    statusEl.className = 'form-status err';
+    statusEl.innerHTML = 'Não foi possível enviar agora. ' +
+      '<a href="' + waUrl + '" target="_blank" rel="noopener" style="color:var(--terracota-dark);text-decoration:underline;font-weight:600;">Clique aqui para enviar pelo WhatsApp</a>.';
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Enviar Pedido de Orçamento';
+  }
+});
+</script>
+</body>
+</html>
