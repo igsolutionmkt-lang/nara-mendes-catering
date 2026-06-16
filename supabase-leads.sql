@@ -2,18 +2,19 @@
 -- Nara Mendes Catering — tabela de leads (pedidos de orçamento)
 -- Colar e correr no SQL Editor do projeto Supabase
 -- ("NaraMendesCatering's Project")
+--
+-- Payload enviado pelo formulário boutique:
+-- { nome, telefone, data_evento, tipo_evento, convidados,
+--   mensagem, consentimento, origem, pagina, timestamp }
 -- ============================================================
 
 create table if not exists public.leads (
   id           uuid primary key default gen_random_uuid(),
   nome         text not null,
   telefone     text not null,
-  email        text,
   data_evento  date,
-  local_evento text,
   tipo_evento  text,
   convidados   integer,
-  servicos     text[],            -- lista (checkboxes do formulário)
   mensagem     text,
   origem       text,
   pagina       text,

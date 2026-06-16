@@ -19,10 +19,40 @@
     },
     {
       "parameters": {
+        "operation": "insert",
+        "tableId": "leads",
+        "dataToSend": "defineBelow",
+        "fieldsUi": {
+          "fieldValues": [
+            { "fieldId": "nome",        "fieldValue": "={{ $json.body.nome }}" },
+            { "fieldId": "telefone",    "fieldValue": "={{ $json.body.telefone }}" },
+            { "fieldId": "data_evento", "fieldValue": "={{ $json.body.data_evento || null }}" },
+            { "fieldId": "tipo_evento", "fieldValue": "={{ $json.body.tipo_evento || null }}" },
+            { "fieldId": "convidados",  "fieldValue": "={{ $json.body.convidados ? parseInt($json.body.convidados) : null }}" },
+            { "fieldId": "mensagem",    "fieldValue": "={{ $json.body.mensagem || null }}" },
+            { "fieldId": "origem",      "fieldValue": "={{ $json.body.origem }}" },
+            { "fieldId": "pagina",      "fieldValue": "={{ $json.body.pagina }}" }
+          ]
+        }
+      },
+      "id": "a1b2c3d4-0004-4000-8000-000000000004",
+      "name": "Supabase - Gravar Lead",
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [560, 320],
+      "credentials": {
+        "supabaseApi": {
+          "id": "SUBSTITUIR_CREDENCIAL_SUPABASE",
+          "name": "Supabase Nara"
+        }
+      }
+    },
+    {
+      "parameters": {
         "sendTo": "cantinhodanarusca@gmail.com",
-        "subject": "=🍴 Novo pedido de orçamento — {{ $json.body.nome }} ({{ $json.body.tipo_evento || 'Evento' }})",
+        "subject": "=🍴 Novo pedido de orçamento — {{ $('Webhook - Formulario').item.json.body.nome }} ({{ $('Webhook - Formulario').item.json.body.tipo_evento || 'Evento' }})",
         "emailType": "html",
-        "message": "=<div style=\"font-family:Arial,Helvetica,sans-serif;max-width:620px;margin:0 auto;color:#2A2622;\">\n  <div style=\"background:#C9622D;color:#fff;padding:22px 26px;border-radius:14px 14px 0 0;\">\n    <h2 style=\"margin:0;font-size:20px;\">Novo pedido de orçamento</h2>\n    <p style=\"margin:6px 0 0;opacity:.9;font-size:14px;\">Nara Mendes Catering Luso-Brasileiro</p>\n  </div>\n  <div style=\"background:#F8F4ED;padding:26px;border:1px solid #eee;border-top:0;border-radius:0 0 14px 14px;\">\n    <table style=\"width:100%;border-collapse:collapse;font-size:15px;\">\n      <tr><td style=\"padding:8px 0;color:#5E574E;width:180px;\">👤 Nome</td><td style=\"padding:8px 0;font-weight:bold;color:#2D4A3E;\">{{ $json.body.nome }}</td></tr>\n      <tr><td style=\"padding:8px 0;color:#5E574E;\">📞 Telefone / WhatsApp</td><td style=\"padding:8px 0;font-weight:bold;color:#2D4A3E;\">{{ $json.body.telefone }}</td></tr>\n      <tr><td style=\"padding:8px 0;color:#5E574E;\">✉️ Email</td><td style=\"padding:8px 0;\">{{ $json.body.email || '—' }}</td></tr>\n      <tr><td style=\"padding:8px 0;color:#5E574E;\">🎉 Tipo de evento</td><td style=\"padding:8px 0;\">{{ $json.body.tipo_evento || '—' }}</td></tr>\n      <tr><td style=\"padding:8px 0;color:#5E574E;\">📅 Data do evento</td><td style=\"padding:8px 0;\">{{ $json.body.data_evento || '—' }}</td></tr>\n      <tr><td style=\"padding:8px 0;color:#5E574E;\">📍 Local</td><td style=\"padding:8px 0;\">{{ $json.body.local_evento || '—' }}</td></tr>\n      <tr><td style=\"padding:8px 0;color:#5E574E;\">👥 Nº de convidados</td><td style=\"padding:8px 0;\">{{ $json.body.convidados || '—' }}</td></tr>\n      <tr><td style=\"padding:8px 0;color:#5E574E;vertical-align:top;\">🍽️ Serviços</td><td style=\"padding:8px 0;\">{{ ($json.body.servicos && $json.body.servicos.length) ? $json.body.servicos.join(', ') : '—' }}</td></tr>\n    </table>\n    <div style=\"margin-top:18px;padding:16px;background:#fff;border-left:4px solid #C9A24B;border-radius:0 8px 8px 0;\">\n      <strong style=\"color:#2D4A3E;\">Mensagem:</strong><br/>{{ $json.body.mensagem || '(sem mensagem)' }}\n    </div>\n    <a href=\"=https://wa.me/{{ ('351' + $json.body.telefone.replace(/\\D/g,'')).replace('351351','351') }}\" style=\"display:inline-block;margin-top:22px;background:#C9622D;color:#fff;text-decoration:none;padding:13px 24px;border-radius:100px;font-weight:bold;\">📲 Responder no WhatsApp</a>\n    <p style=\"margin-top:22px;font-size:12px;color:#8a8378;\">Origem: {{ $json.body.origem }} · Recebido: {{ $json.body.timestamp }}</p>\n  </div>\n</div>",
+        "message": "=<div style=\"font-family:Arial,Helvetica,sans-serif;max-width:620px;margin:0 auto;color:#2A2622;\">\n  <div style=\"background:#C9622D;color:#fff;padding:22px 26px;border-radius:14px 14px 0 0;\">\n    <h2 style=\"margin:0;font-size:20px;\">Novo pedido de orçamento</h2>\n    <p style=\"margin:6px 0 0;opacity:.9;font-size:14px;\">Nara Mendes Catering Luso-Brasileiro</p>\n  </div>\n  <div style=\"background:#F8F4ED;padding:26px;border:1px solid #eee;border-top:0;border-radius:0 0 14px 14px;\">\n    <table style=\"width:100%;border-collapse:collapse;font-size:15px;\">\n      <tr><td style=\"padding:8px 0;color:#5E574E;width:180px;\">👤 Nome</td><td style=\"padding:8px 0;font-weight:bold;color:#221C17;\">{{ $('Webhook - Formulario').item.json.body.nome }}</td></tr>\n      <tr><td style=\"padding:8px 0;color:#5E574E;\">📞 WhatsApp</td><td style=\"padding:8px 0;font-weight:bold;color:#221C17;\">{{ $('Webhook - Formulario').item.json.body.telefone }}</td></tr>\n      <tr><td style=\"padding:8px 0;color:#5E574E;\">🎉 Tipo de evento</td><td style=\"padding:8px 0;\">{{ $('Webhook - Formulario').item.json.body.tipo_evento || '—' }}</td></tr>\n      <tr><td style=\"padding:8px 0;color:#5E574E;\">📅 Data do evento</td><td style=\"padding:8px 0;\">{{ $('Webhook - Formulario').item.json.body.data_evento || '—' }}</td></tr>\n      <tr><td style=\"padding:8px 0;color:#5E574E;\">👥 Nº de convidados</td><td style=\"padding:8px 0;\">{{ $('Webhook - Formulario').item.json.body.convidados || '—' }}</td></tr>\n    </table>\n    <div style=\"margin-top:18px;padding:16px;background:#fff;border-left:4px solid #C9A24B;border-radius:0 8px 8px 0;\">\n      <strong style=\"color:#221C17;\">Mensagem:</strong><br/>{{ $('Webhook - Formulario').item.json.body.mensagem || '(sem mensagem)' }}\n    </div>\n    <a href=\"=https://wa.me/{{ ('351' + $('Webhook - Formulario').item.json.body.telefone.replace(/\\D/g,'')).replace('351351','351') }}\" style=\"display:inline-block;margin-top:22px;background:#C9622D;color:#fff;text-decoration:none;padding:13px 24px;border-radius:100px;font-weight:bold;\">📲 Responder no WhatsApp</a>\n    <p style=\"margin-top:22px;font-size:12px;color:#8a8378;\">Origem: {{ $('Webhook - Formulario').item.json.body.origem }} · Recebido: {{ $('Webhook - Formulario').item.json.body.timestamp }}</p>\n  </div>\n</div>",
         "options": {
           "appendAttribution": false
         }
@@ -31,7 +61,7 @@
       "name": "Enviar Email (Gmail)",
       "type": "n8n-nodes-base.gmail",
       "typeVersion": 2,
-      "position": [560, 320],
+      "position": [880, 320],
       "credentials": {
         "gmailOAuth2": {
           "id": "SUBSTITUIR_CREDENCIAL_GMAIL",
@@ -49,11 +79,18 @@
       "name": "Responder 200",
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1,
-      "position": [880, 320]
+      "position": [1200, 320]
     }
   ],
   "connections": {
     "Webhook - Formulario": {
+      "main": [
+        [
+          { "node": "Supabase - Gravar Lead", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Supabase - Gravar Lead": {
       "main": [
         [
           { "node": "Enviar Email (Gmail)", "type": "main", "index": 0 }
