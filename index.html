@@ -23,9 +23,9 @@
 <meta property="og:image" content="https://igsolutionmkt-lang.github.io/nara-mendes-catering/assets/og-image.webp" />
 <meta name="twitter:card" content="summary_large_image" />
 
-<!-- Favicon (substituir por assets/favicon-32.png e apple-touch-icon.png quando disponíveis) -->
-<link rel="icon" type="image/png" href="assets/logo-icon.png" />
-<link rel="apple-touch-icon" href="assets/logo-icon.png" />
+<!-- Favicon — criar assets/favicon-32.png e assets/apple-touch-icon.png -->
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,8 +46,7 @@
   "priceRange": "€€",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Rua Dom Nuno Álvares Pereira, 240",
-    "addressLocality": "Matosinhos",
+    "addressLocality": "Porto",
     "addressRegion": "Porto",
     "addressCountry": "PT"
   },
@@ -149,6 +148,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
    PLACEHOLDERS (gradientes enquanto não há fotos reais)
    ============================================================ */
 .foodph { overflow: hidden; background-size: cover; background-position: center; }
+.foodph img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .ph-1 { background-image: linear-gradient(135deg, #d9763f, #a83e1c); }
 .ph-2 { background-image: linear-gradient(135deg, #e0b15a, #b9863a); }
 .ph-3 { background-image: linear-gradient(135deg, #3a3027, #221c17); }
@@ -470,7 +470,7 @@ footer a:hover { color: var(--dourado); }
 <header class="nav">
   <div class="nav-inner">
     <a href="#hero" class="brand" aria-label="Nara Mendes Catering — início">
-      <img class="brand-mark" src="assets/logo-icon.png" width="32" height="32" alt="Logótipo Nara Mendes Catering" />
+      <img class="brand-mark" src="assets/logo-header.webp" width="32" height="32" alt="Logótipo Nara Mendes Catering" onerror="this.src='assets/logo-icon.png'" />
       <span class="brand-name">Nara Mendes<small>Catering Luso-Brasileiro</small></span>
     </a>
     <nav class="nav-links" id="navLinks" aria-label="Navegação principal">
@@ -507,7 +507,9 @@ footer a:hover { color: var(--dourado); }
       </div>
     </div>
     <div class="hero-visual reveal">
-      <div class="hero-photo foodph ph-1" role="img" aria-label="Mesa de catering luso-brasileiro"></div>
+      <div class="hero-photo foodph ph-1" role="img" aria-label="Mesa de catering luso-brasileiro">
+        <img src="assets/mesa-catering-luso-brasileiro-porto.webp" alt="Mesa de catering luso-brasileiro no Porto" width="600" height="750" onerror="this.style.display='none'" />
+      </div>
     </div>
   </div>
 </section>
@@ -515,7 +517,9 @@ footer a:hover { color: var(--dourado); }
 <!-- ============================== SOBRE ============================== -->
 <section id="sobre">
   <div class="wrap sobre-grid">
-    <div class="sobre-photo foodph ph-3 reveal" role="img" aria-label="Nara Mendes na cozinha"></div>
+    <div class="sobre-photo foodph ph-3 reveal" role="img" aria-label="Nara Mendes na cozinha">
+      <img src="assets/nara-mendes-catering-producao.webp" alt="Nara Mendes a preparar catering" loading="lazy" width="600" height="600" onerror="this.style.display='none'" />
+    </div>
     <div class="sobre-text reveal">
       <span class="eyebrow">A Nara Mendes</span>
       <h2>Mais de 10 anos a preparar festas que ficam na memória.</h2>
@@ -535,7 +539,7 @@ footer a:hover { color: var(--dourado); }
     </div>
     <div class="service-list">
       <div class="service-item reveal">
-        <div class="service-img foodph ph-2" role="img" aria-label="Mesa de festa com salgados e bolos decorados"></div>
+        <div class="service-img foodph ph-2" role="img" aria-label="Mesa de festa com salgados e bolos decorados"><img src="assets/mesa-festa-nara-mendes.webp" alt="Mesa de festa catering Nara Mendes" loading="lazy" width="480" height="320" onerror="this.style.display='none'" /></div>
         <span class="service-num">01</span>
         <h3>Festas e Aniversários</h3>
         <p>Salgados, doces, bolos decorados e mesas personalizadas para celebrações familiares.</p>
@@ -544,7 +548,7 @@ footer a:hover { color: var(--dourado); }
         </a>
       </div>
       <div class="service-item reveal">
-        <div class="service-img foodph ph-5" role="img" aria-label="Almoço ou jantar privado"></div>
+        <div class="service-img foodph ph-5" role="img" aria-label="Almoço ou jantar privado"><img src="assets/pratos-brasileiros-eventos-porto.webp" alt="Pratos brasileiros para eventos no Porto" loading="lazy" width="480" height="320" onerror="this.style.display='none'" /></div>
         <span class="service-num">02</span>
         <h3>Almoços e Jantares</h3>
         <p>Menus brasileiros e portugueses para encontros íntimos, famílias e ocasiões especiais.</p>
@@ -553,7 +557,7 @@ footer a:hover { color: var(--dourado); }
         </a>
       </div>
       <div class="service-item reveal">
-        <div class="service-img foodph ph-6" role="img" aria-label="Salgados e doces por encomenda"></div>
+        <div class="service-img foodph ph-6" role="img" aria-label="Salgados e doces por encomenda"><img src="assets/salgados-brasileiros-porto.webp" alt="Salgados brasileiros por encomenda no Porto" loading="lazy" width="480" height="320" onerror="this.style.display='none'" /></div>
         <span class="service-num">03</span>
         <h3>Salgados, Doces e Bolos</h3>
         <p>Coxinhas, rissóis, brigadeiros, bolos decorados e sobremesas por encomenda.</p>
@@ -601,12 +605,12 @@ footer a:hover { color: var(--dourado); }
       <h2>Detalhes que se provam primeiro pelos olhos.</h2>
     </div>
     <div class="gallery">
-      <figure class="reveal"><div class="foodph ph-1" role="img" aria-label="Salgados brasileiros para festas no Porto"></div><figcaption>Salgados</figcaption></figure>
-      <figure class="reveal"><div class="foodph ph-6" role="img" aria-label="Bolos decorados de aniversário"></div><figcaption>Bolos decorados</figcaption></figure>
-      <figure class="reveal"><div class="foodph ph-8" role="img" aria-label="Doces de festa"></div><figcaption>Doces</figcaption></figure>
-      <figure class="reveal"><div class="foodph ph-5" role="img" aria-label="Pratos brasileiros para eventos"></div><figcaption>Pratos brasileiros</figcaption></figure>
-      <figure class="reveal"><div class="foodph ph-3" role="img" aria-label="Pratos portugueses tradicionais"></div><figcaption>Pratos portugueses</figcaption></figure>
-      <figure class="reveal"><div class="foodph ph-2" role="img" aria-label="Mesa de festa montada"></div><figcaption>Mesas de festa</figcaption></figure>
+      <figure class="reveal"><div class="foodph ph-1" role="img" aria-label="Salgados brasileiros para festas no Porto"><img src="assets/salgados-brasileiros-porto.webp" alt="Salgados brasileiros para festas no Porto" loading="lazy" width="400" height="300" onerror="this.style.display='none'" /></div><figcaption>Salgados</figcaption></figure>
+      <figure class="reveal"><div class="foodph ph-6" role="img" aria-label="Bolos decorados de aniversário"><img src="assets/bolo-decorado-nara-mendes.webp" alt="Bolo decorado de aniversário Nara Mendes" loading="lazy" width="400" height="300" onerror="this.style.display='none'" /></div><figcaption>Bolos decorados</figcaption></figure>
+      <figure class="reveal"><div class="foodph ph-8" role="img" aria-label="Doces de festa"><img src="assets/doces-festa-nara-mendes.webp" alt="Doces de festa catering luso-brasileiro" loading="lazy" width="400" height="300" onerror="this.style.display='none'" /></div><figcaption>Doces</figcaption></figure>
+      <figure class="reveal"><div class="foodph ph-5" role="img" aria-label="Pratos brasileiros para eventos"><img src="assets/pratos-brasileiros-eventos-porto.webp" alt="Pratos brasileiros para eventos no Porto" loading="lazy" width="400" height="300" onerror="this.style.display='none'" /></div><figcaption>Pratos brasileiros</figcaption></figure>
+      <figure class="reveal"><div class="foodph ph-3" role="img" aria-label="Pratos portugueses tradicionais"><img src="assets/pratos-portugueses-catering-porto.webp" alt="Pratos portugueses catering no Porto" loading="lazy" width="400" height="300" onerror="this.style.display='none'" /></div><figcaption>Pratos portugueses</figcaption></figure>
+      <figure class="reveal"><div class="foodph ph-2" role="img" aria-label="Mesa de festa montada"><img src="assets/mesa-festa-nara-mendes.webp" alt="Mesa de festa montada por Nara Mendes" loading="lazy" width="400" height="300" onerror="this.style.display='none'" /></div><figcaption>Mesas de festa</figcaption></figure>
     </div>
   </div>
 </section>
@@ -657,7 +661,7 @@ footer a:hover { color: var(--dourado); }
       <ul class="orcamento-contacts">
         <li>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
-          <a href="https://www.instagram.com/naruscades" target="_blank" rel="noopener">@naruscades</a>
+          <a href="#" data-ig target="_blank" rel="noopener">@naruscades</a>
         </li>
         <li>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -752,7 +756,7 @@ footer a:hover { color: var(--dourado); }
     <div class="foot-grid">
       <div>
         <div class="foot-brand">
-          <img class="brand-mark" src="assets/logo-icon.png" width="32" height="32" alt="Logótipo Nara Mendes Catering" />
+          <img class="brand-mark" src="assets/logo-header.webp" width="32" height="32" alt="Logótipo Nara Mendes Catering" onerror="this.src='assets/logo-icon.png'" />
           <span class="brand-name">Nara Mendes<small>Catering Luso-Brasileiro</small></span>
         </div>
         <p style="max-width:280px;font-size:0.88rem;line-height:1.65;">Catering luso-brasileiro para festas, aniversários e eventos no Porto e Grande Porto.</p>
@@ -771,7 +775,7 @@ footer a:hover { color: var(--dourado); }
         <ul class="foot-contact">
           <li>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Rua D. Nuno Álvares Pereira, 240, Matosinhos
+            Porto e Grande Porto · Atendimento por encomenda
           </li>
           <li>
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24z"/></svg>
@@ -779,14 +783,14 @@ footer a:hover { color: var(--dourado); }
           </li>
           <li>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
-            <a href="https://www.instagram.com/naruscades" target="_blank" rel="noopener">@naruscades</a>
+            <a href="#" data-ig target="_blank" rel="noopener">@naruscades</a>
           </li>
           <li><a href="privacidade.html" style="font-size:0.82rem;opacity:.6;">Política de Privacidade</a></li>
         </ul>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© <span id="year"></span> Nara Mendes Catering · Matosinhos, Porto</span>
+      <span>© <span id="year"></span> Nara Mendes Catering · Porto e Grande Porto</span>
       <span>Pedidos mediante orçamento e reserva antecipada.</span>
     </div>
   </div>
@@ -811,6 +815,7 @@ footer a:hover { color: var(--dourado); }
    ============================================================ */
 const WEBHOOK_URL = (window.NARA_CONFIG && window.NARA_CONFIG.WEBHOOK_URL) || "SUBSTITUIR_AQUI";
 const WHATSAPP_NUMBER = "351967323308";
+const IG_HANDLE = "naruscades"; /* alterar aqui para mudar o @ em todo o site */
 
 function waMessage(evento) {
   var alvo = evento || "um evento";
@@ -840,6 +845,10 @@ navLinks.querySelectorAll('a').forEach(function (a) {
 
 /* Ano no footer */
 document.getElementById('year').textContent = new Date().getFullYear();
+document.querySelectorAll('a[data-ig]').forEach(function(a){
+  a.href = 'https://www.instagram.com/' + IG_HANDLE;
+  a.textContent = '@' + IG_HANDLE;
+});
 
 /* Toggle formulário */
 var toggleBtn = document.getElementById('toggleForm');
