@@ -251,13 +251,46 @@ header.nav {
 .spec-section { background: var(--carvao); color: var(--creme); }
 .spec-section .eyebrow { color: var(--dourado); }
 .spec-section h2 { color: var(--creme); }
-.spec-grid {
-  display: grid; grid-template-columns: repeat(4, 1fr);
-  gap: 1px; background: rgba(255,255,255,0.07);
+.spec-section .section-nota {
+  text-align: center;
+  margin-top: 48px;
+  font-size: 0.84rem;
+  color: rgba(248,244,237,0.42);
+  letter-spacing: 0.01em;
+  line-height: 1.7;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.spec-col { background: var(--carvao); padding: 36px 28px; }
-.spec-col h3 { color: var(--dourado); font-size: 1.05rem; margin-bottom: 12px; font-weight: 500; }
-.spec-col p { font-size: 0.88rem; color: rgba(248,244,237,0.65); line-height: 1.65; }
+.spec-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border: 1px solid rgba(201,162,75,0.18);
+}
+.spec-col {
+  padding: 44px 40px;
+  border: 1px solid rgba(201,162,75,0.12);
+  position: relative;
+}
+.spec-col::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 1px;
+  background: var(--dourado);
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+.spec-col h3 {
+  color: var(--creme);
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  font-weight: 500;
+  margin-bottom: 14px;
+  letter-spacing: -0.01em;
+}
+.spec-col p { font-size: 0.875rem; color: rgba(248,244,237,0.58); line-height: 1.75; }
 
 /* ============================================================
    GALERIA
@@ -432,6 +465,7 @@ footer a:hover { color: var(--dourado); }
     padding: 28px 0 !important;
   }
   .spec-grid { grid-template-columns: repeat(2, 1fr); }
+  .spec-col { padding: 36px 28px; }
   .gallery { grid-template-columns: repeat(2, 1fr); }
   .foot-grid { grid-template-columns: 1fr 1fr; }
   .nav-links { display: none; }
@@ -449,6 +483,7 @@ footer a:hover { color: var(--dourado); }
 @media (max-width: 580px) {
   body { font-size: 15px; padding-bottom: 68px; }
   .spec-grid, .steps, .gallery, .foot-grid { grid-template-columns: 1fr; }
+  .spec-col { padding: 32px 24px; }
   .fgrid { grid-template-columns: 1fr; }
   .hero-action .btn, .orcamento-lead-btns .btn, .orcamento-lead-btns .btn-ghost-light { width: 100%; justify-content: center; }
   .sticky-wa { display: block; }
@@ -573,26 +608,27 @@ footer a:hover { color: var(--dourado); }
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow">Especialidades</span>
-      <h2>Sabores que unem Brasil e Portugal.</h2>
+      <h2>Menus pensados para celebrar, receber e partilhar.</h2>
     </div>
     <div class="spec-grid reveal">
       <div class="spec-col">
-        <h3>Salgados</h3>
-        <p>Coxinhas, rissóis, empadas, pão de queijo, salgados fritos e assados para festas.</p>
+        <h3>Salgados para Festa</h3>
+        <p>Coxinhas, empadas, rissóis, bolinhas de queijo, quibes, enroladinhos e pão de queijo — preparados para mesas de aniversário, festas familiares e eventos.</p>
       </div>
       <div class="spec-col">
-        <h3>Bolos e Doces</h3>
-        <p>Brigadeiros, beijinhos, bolos decorados, tortas e sobremesas em taça.</p>
+        <h3>Bolos e Mesa Doce</h3>
+        <p>Bolos decorados, tortas recheadas, brigadeiros, beijinhos, pudins, sobremesas em taça e doces personalizados para dar presença à mesa.</p>
       </div>
       <div class="spec-col">
-        <h3>Pratos Brasileiros</h3>
-        <p>Feijoada, escondidinho, moqueca, arroz de forno, farofa e acompanhamentos.</p>
+        <h3>Cozinha Brasileira</h3>
+        <p>Feijoada completa, bobó de camarão, moqueca, escondidinhos, strogonoff brasileiro, salpicão, arroz de forno, carne assada, frango ao molho, farofa e acompanhamentos.</p>
       </div>
       <div class="spec-col">
-        <h3>Pratos Portugueses</h3>
-        <p>Bacalhau, assados, pratos de forno e menus tradicionais sob encomenda.</p>
+        <h3>Cozinha Portuguesa e de Forno</h3>
+        <p>Bacalhau no forno, arroz de pato, assados, pratos de forno, tábuas frias, entradas e menus personalizados para almoços, jantares e celebrações.</p>
       </div>
     </div>
+    <p class="section-nota reveal">Todos os menus são preparados sob encomenda e ajustados ao número de convidados, tipo de evento e preferências do cliente.</p>
   </div>
 </section>
 
