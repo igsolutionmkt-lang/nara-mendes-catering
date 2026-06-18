@@ -497,13 +497,25 @@ footer a:hover { color: var(--dourado); }
 }
 @media (max-width: 580px) {
   body { font-size: 15px; padding-bottom: 68px; }
-  .spec-grid, .steps, .gallery, .foot-grid { grid-template-columns: 1fr; }
-  .spec-col { padding: 32px 24px; }
+  .wrap { padding: 0 20px; }
+  .spec-grid, .steps, .foot-grid { grid-template-columns: 1fr; }
+  .gallery { grid-template-columns: repeat(2, 1fr); gap: 6px; }
+  .spec-col { padding: 28px 20px; }
   .fgrid { grid-template-columns: 1fr; }
   .hero-action .btn, .orcamento-lead-btns .btn, .orcamento-lead-btns .btn-ghost-light { width: 100%; justify-content: center; }
   .sticky-wa { display: block; }
   .wa-float { display: none; }
   .foot-bottom { flex-direction: column; }
+  .hero-photo { aspect-ratio: 3/2; }
+  .hero-visual { max-width: 100%; }
+  .hero h1 { max-width: 100%; }
+  .hero-sub { max-width: 100%; font-size: 0.95rem; margin-bottom: 28px; }
+  .steps { gap: 28px; }
+  .sobre-quote { padding: 14px 16px 14px 16px; font-size: 0.96rem; }
+  .section-head { margin-bottom: 36px; }
+  .orcamento-lead { margin-bottom: 32px; }
+  .spec-section .section-nota { margin-top: 32px; }
+  .gallery figure { aspect-ratio: 1/1; }
 }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; scroll-behavior: auto !important; }
